@@ -1,0 +1,23 @@
+# User configuration. Only config.yaml.example belongs in Git.
+config.yaml
+
+# Generated subscription output contains the VLESS UUID and Reality metadata.
+output/
+subscriptions.txt
+*_link.txt
+*_url.txt
+*_sub_url.txt
+*_vless_link.txt
+clash_vless.yaml
+clash_sub_url.txt
+vless_link.txt
+vless_qr.png
+
+# Local/editor/temp files.
+.claude/
+CLAUDE.md
+__pycache__/
+*.pyc
+*.tmp
+*.bak
+.DS_Store

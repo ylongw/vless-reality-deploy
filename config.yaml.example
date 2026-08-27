@@ -1,0 +1,31 @@
+# Copy this file to config.yaml before deployment.
+# config.yaml is ignored by Git and may contain a root password.
+
+server:
+  # Node name shown in Clash/Mihomo clients.
+  name: "My Reality"
+
+  # Port 443 is used by VLESS Reality. This is the HTTP subscription port.
+  sub_port: 8443
+
+  # Optional public IPv4/IPv6/domain used by the node and subscription URL.
+  # Leave empty to derive it from ssh.host.
+  address: ""
+
+  # Reality handshake target. Usually no change is needed.
+  reality_sni: "www.samsung.com"
+
+ssh:
+  # Recommended: use an existing Host alias from ~/.ssh/config.
+  mode: "key"
+  host: "my-vps"
+  user: ""
+  port: ""
+  password: ""
+
+  # Password alternative:
+  # mode: "password"
+  # host: "1.2.3.4"
+  # user: "root"
+  # port: 22
+  # password: "replace_with_root_password"
